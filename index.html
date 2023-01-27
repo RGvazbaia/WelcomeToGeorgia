@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
+
+
+
+">
 
   </head>
   <body>
     <header>
       <div class="header-wraper">
-        <a href="index.html">LOGO</a>
+        <a href="index.html"><img class="icon" src="images/icon.png" alt="icon"></a>
         <nav class="navigation" id="navBar">
           <ul class="nav-ul" id="ul-item">
             <li><a href="">Home</a></li>
@@ -31,21 +35,53 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
       </div>
     </header>
-    <section class="welcome">
-        <img class="welcomeimg" src="images/welcome.jpg" alt="welcome">
+    <section class="welcomebck">
+      <div class="welcome">
+        Welcome To Georgia
+      </div>        
     </section>
-    <section>        
-        <section>
-            <div class="slider-wraper">
-              <button class="arrow leftbtn" id="leftbtn"><</button>
-              <button class="arrow rightbtn" id="rightbtn">></button>
-              <div class="slider-content" id="slider-content">
-              
-              
-              </div>
+
+    <div class="splide">
+      <div class="splide__track">
+        <div class="splide__list">
+          <div class="splide__slide">
+            <div class="img__box">
+              <img src="images/mcxetaslider.jpg">
             </div>
-          </section>
+          </div>
+          <div class="splide__slide">
+            <div class="img__box">
+              <img src="images/Gomis-Mta.jpg">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="img__box">
+              <img src="images/gudarislider.jpg">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="img__box">
+              <img src="images/batetis lake.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!-- scroll top -->
+<div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-angles-up"></i></div>
+
+
     <script src="script/Burger-Bar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm" ></script>
+<!-- splide slider -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" ></script>
     <script src="script/slider.js"></script>
+      <!-- scrollTop -->
+      <script src="script/scrollToTop.js"></script>
+      <script >
+        let a = window.pageYOffset;
+        console.log(a);
+      </script>
+    
+  </body>
 </html>
