@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .burger-bar {
+    display: block;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .nav-ul li a {
+    font-size: 30px;
+  }
+  .nav-ul :nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

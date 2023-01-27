@@ -1,0 +1,120 @@
+.header-wraper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  z-index: 100;
+  background-color: rebeccapurple;
+  
+  
+}
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-ul li a {
+  margin: 50px;
+  color: #fff;
+}
+.burger-bar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+
+  display: none;
+}
+.line {
+  width: 80%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+.line1 {
+  top: 30%;
+}
+.line3 {
+  top: 70%;
+}
+.activeBugerBar .line1 {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.activeBugerBar .line2 {
+  display: none;
+}
+.activeBugerBar .line3 {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.nav-ul.toggleNavigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1c1d22;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.welcome{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+   
+}
+.welcomeimg{
+  border-radius: 25px;
+  
+}
+
+/* slider */
+
+
+.slider-wraper {
+  margin-top: 50px;
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+
+}
+img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+.arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;  
+  color: black;
+  font-size: 40px;
+  font-style: unset;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+}
+.leftbtn{
+  left: 25px;
+}
+.rightbtn {
+  right: 25px;
+}
+
+.slider-content{
+  font-size: 30px;
+  color: rgb(170, 155, 24);
+  font-style: initial;
+}
