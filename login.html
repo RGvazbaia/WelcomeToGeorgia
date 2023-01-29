@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>finalscript</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
+">
+<link rel="icon" type="image/x-icon" href="/images/icon.png">
+  </head>
+  <body class="loginbck">
+    <header>
+      <div class="header-wraper">
+        <a href="index.html"><img class="icon" src="images/icon.png" alt="icon"></a>
+        <nav class="navigation" id="navBar">
+          <ul class="nav-ul" id="ul-item">
+            <li><a href="">Home</a></li>
+            
+            <li><a href="login.html">Sing In</a></li>
+            <li><a href="">Registration</a></li>
+          </ul>
+        </nav>
+        <div class="burger-bar" id="burgerBar">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </div>
+    </header>
+    <section class="registration">      
+      <form action="" id="form-registration" method="POST">
+        <div class="form-wraper">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="username" />
+          <span class="error-text" id="error_username"></span>
+          <!-- id = "error_+name ატრიბუტის მნიშვნელობა" -->
+        </div>
+        <div class="form-wraper">
+          <label for="passw1">Password</label>
+          <input type="password" id="passw1" name="mypassword" />
+          <span class="error-text" id="error_mypassword"></span>
+        </div>
+        <div class="form-wraper">
+          <label for="passw2">Repeat Password</label>
+          <input type="password" id="passw2" name="mypassword2" />
+          <span class="error-text" id="error_mypassword2"></span>
+        </div>
+        <div>
+          <input type="radio" name="age" id="age1" class="age" />
+          <label for="age1">18-30</label>
+          <input type="radio" id="age2" name="age" class="age" />
+          <label for="age2">30-45</label>
+          <span class="error-text" id="error_age"></span>
+        </div>
+        <div>
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree">I agree terms and conditions</label>
+          <span class="error-text" id="error_agree"></span>
+        </div>
+
+        <button type="submit">Submti Form</button>
+      </form>
+    </section>
+    </section>
+  </body>
+</html>
