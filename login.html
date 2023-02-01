@@ -14,59 +14,60 @@
 ">
 <link rel="icon" type="image/x-icon" href="/images/icon.png">
   </head>
-  <body class="loginbck">
-    <header>
-      <div class="header-wraper">
-        <a href="index.html"><img class="icon" src="images/icon.png" alt="icon"></a>
-        <nav class="navigation" id="navBar">
-          <ul class="nav-ul" id="ul-item">
-            <li><a href="">Home</a></li>
+  <body>
+   
+    <section class="form">
+      <p class="psignup">Sing Up</p>
+      <form action="" id="registration-form" class="form">
+        <div class="validation">
+          <label for="nickname"></label>
+          <input type="text" id="nickname" name="nickname" class="inputsize" placeholder="Nickname"/> 
+          <p class="error-message" id="error-nickname">
             
-            <li><a href="login.html">Sing In</a></li>
-            <li><a href="">Registration</a></li>
-          </ul>
-        </nav>
-        <div class="burger-bar" id="burgerBar">
-          <div class="line line1"></div>
-          <div class="line line2"></div>
-          <div class="line line3"></div>
+          </p>
         </div>
-      </div>
-    </header>
-    <section class="registration">      
-      <form action="" id="form-registration" method="POST">
-        <div class="form-wraper">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="username" />
-          <span class="error-text" id="error_username"></span>
-          <!-- id = "error_+name ატრიბუტის მნიშვნელობა" -->
+        <div class="validation">
+          <label for="email"></label>
+          <input type="text" id="email" name="email" class="inputsize" placeholder="Email" onkeydown=""/> 
+          <p class="error-message" id="error-email1">
+            
+          </p>
         </div>
-        <div class="form-wraper">
-          <label for="passw1">Password</label>
-          <input type="password" id="passw1" name="mypassword" />
-          <span class="error-text" id="error_mypassword"></span>
+        <div class="validation">
+          <label for="password1"></label>
+          <input type="password" id="password1" name="mypassword" class="inputsize"  placeholder="Password" /> 
+          <i class="fa-solid fa-eye" id="toggleEye"></i>
+          <p class="error-message" id="error-mypassword">
+          </p>
         </div>
-        <div class="form-wraper">
-          <label for="passw2">Repeat Password</label>
-          <input type="password" id="passw2" name="mypassword2" />
-          <span class="error-text" id="error_mypassword2"></span>
+        
+        <div class="validation">
+          <label for="password2"></label>
+          <input type="password" id="password2" name="mypassword2" class="inputsize" placeholder="Repeat Password" />
+          <p class="error-message" id="error-mypassword2">
+          </p>
         </div>
-        <div>
+        <div class="validation">
           <input type="radio" name="age" id="age1" class="age" />
-          <label for="age1">18-30</label>
+          <label for="age1">18-50</label>
           <input type="radio" id="age2" name="age" class="age" />
-          <label for="age2">30-45</label>
-          <span class="error-text" id="error_age"></span>
+          <label for="age2">50-100</label>
+          <p class="error-message" id="error-age">
+            
+        </p>
         </div>
-        <div>
+        <div class="validation">
           <input type="checkbox" name="agree" id="agree" />
-          <label for="agree">I agree terms and conditions</label>
-          <span class="error-text" id="error_agree"></span>
+          <label for="agree">I agree  Our Terms and Conditions</label>
+          <p class="error-message" id="error-agree">
+            
         </div>
-
-        <button type="submit">Submti Form</button>
+        <div class="validation">
+        <button type="submit">Registration</button>
+        </div>
       </form>
     </section>
-    </section>
+  <script src="script/registration.js"></script>
+  <script src="script/validation.js"></script>
   </body>
 </html>

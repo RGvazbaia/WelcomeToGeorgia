@@ -152,38 +152,157 @@ img {
   color: #000;
   font-weight: bold;
 }
+ 
+/* Sign Up */
+.validation{
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;  
+  font-size: 16px;
+  
+}
 
-/* form */
-.form-wraper {
-  display: flex;
-  flex-direction: column;
+.inputsize{
+  width: 200px;
+  height: 25px;
+  justify-content: center;
+  align-items: center; 
 }
-.error-text {
-  display: block;
-  color:red;
+
+.form {
+  background: #0066b2;
+  width: 500px;
+  border-radius: 25px;
+  
+  
+} 
+
+.error-message{
+  color: #ff0000;
+  font-size: 16px;
 }
-.passw {
-  max-width: 700px;
+
+
+.psignup{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 20px;
+  color: white;
+  
+}
+
+
+
+/* accordion */
+.secondblock {
+  max-width: 1637px;
+  width: 80%;
+  text-align: center;
+  margin: 100px auto;
+  
+}
+
+.secondblock h3 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  text-align: center;
+  
+}
+.teamblock {   
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
 }
-.emailError {
+
+.team-title {
+  margin-top: 20px;
+  margin-left: 10px;
+  position: relative;  
+}
+.team-title:before {
+  content: '+';
+  font: var(--fa-solid-fa-chevron-up);
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+.team-content {
+  height: 50px;
+  display: none;
+  width: 100%;
+  font-size: 22px;
+  transition: 0.5s;
+  
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.teambox.active .team-content {
   display: block;
 }
-
-.registration{
-  margin: 250px;
-  margin-left: 500px;
-  background-image: no-repeat center  url("../images/logimbck.jpg");
-  
-  height: 1119px;
-  
-  
+.teambox.active .team-title:before {
+  content: "-";
 }
-.form-wraper{
-  width: 350px;
+.teambox {
+ 
+  margin-bottom: 30px;
+  padding: 10px;
 }
 
-.loginbck{
-  background-image: no-repeat center  url("../images/loginbck.jpg");  
-  height: 1119px;
+/* footer */
+.footer-block {
+  background-color: #000000;
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+}
+.contactfooter {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+  padding-top: 10px;
+}
+.fpstyle {
+  margin-bottom: 20px;
+}
+.icons {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.icons .fa-brands {
+  font-size: 40px;
+}
+.icons .fa-instagram {
+  font-size: 40px;
+}
+.icons .fa-youtube {
+  font-size: 40px;
+  color: #dc4e41;
+  margin-left: 40px;
+}
+.icons .fa-twitter {
+  font-size: 40px;
+}
+.footer-block p {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.fa-facebook {
+  color: #3549e5;
+}
+.fa-instagram {
+  color: #a020f0;
+}
+
+.fa-twitter {
+  color: #00acee;
 }

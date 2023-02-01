@@ -14,7 +14,7 @@
 ">
 <link rel="icon" type="image/x-icon" href="/images/icon.png">
   </head>
-  <body>
+  <section>
     <header>
       <div class="header-wraper">
         <a href="index.html"><img class="icon" src="images/icon.png" alt="icon"></a>
@@ -22,8 +22,8 @@
           <ul class="nav-ul" id="ul-item">
             <li><a href="">Home</a></li>
             
-            <li><a href="login.html">Sing In</a></li>
-            <li><a href="">Registration</a></li>
+            <li><a href="login.html">Sing Up</a></li>
+            <li><a href="">Sing In</a></li>
           </ul>
         </nav>
         <div class="burger-bar" id="burgerBar">
@@ -75,42 +75,61 @@
         </div>
       </div>
     </div>
+  </section>
+    <section>
+      <div class="secondblock">        
+        <h3>Our Guides</h3>        
+      </div>
+      
+      <div class="teamblock">
+        <div class="teambox">
+          <img src="images/John.jpg" alt="teammember" />
+          <h2 class="team-title"><span class="span1">John Blake</span></h2>
+          <p class="team-content">Founder and Chairman</p>
+        </div>
+        <div class="teambox">
+          <img src="images/Alan.jpg" alt="teammember" />
+          <h2 class="team-title"><span class="span1">Alan David</span></h2>
+          <p class="team-content">CEO</p>
+        </div>
+        <div class="teambox">
+          <img src="images/Diana.jpg" alt="teammember" />
+          <h2 class="team-title"><span class="span1">Dina</span></h2>
+          <p class="team-content">Head Designer</p>
+        </div>
+        <div class="teambox">
+          <img src="images/Jessica.jpg" alt="teammember" />
+          <h2 class="team-title"><span class="span1">Jessica</span></h2>
+          <p class="team-content">HR Manager</p>
+        </div>
+      </div>
     
-    <!-- cookies -->
-   
-<!-- <div class="cookies">  
-  <h4>Enter Your Nickname and Email</h4>
-<div class="container" id="app">  
-  <div class="form-group">
-    <div class="input-group">
-      <span class="input-group-addon"><i class="fas fa-user"></i></span>
-      <input type="text" class="form-control" placeholder="Username" v-model="username" @keyup.enter="Save()" />
-    </div>
-  </div>
-  
-  <div class="form-group">
-    <div class="input-group">
-      <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
-      <input type="email" class="form-control" placeholder="Email" v-model="email" @keyup.enter="Save()" />
-    </div>
-  </div>
-  
-  
-  
-  <div class="form-group">
-    <button type="button" class="btn btn-primary" @click="Save()"><i class="fas fa-check"></i>&nbsp;&nbsp; Save Details</button>
-    <button type="button" class="btn btn-default" @click="Clear()"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp; Clear</button>
-  </div>
-  
-</div>
-</div> -->
+    </section>    
 
-    <!-- cookies.js -->
-    <script src="
-https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js
-"></script>
-<script src="script/cookies.js"></script>
-
+    <footer class="footer-block">
+      <div class="contactfooter">
+        <p class="fpstyle">Contact Us</p>
+        <div class="icons">
+          <a class="facebook" href="https://www.facebook.com/" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a class="instagram" href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="youtobe" href="https://www.youtube.com/" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a class="twitter" href="https://twitter.com/" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+      <p>
+        Copyright ©2022 All Rights Reserved | This Site Is Made For Academy Of
+        Digital Industries By <span class="span1">Rati Gvazbaia</span>
+      </p>
+    </footer>
+ 
 <!-- scroll top -->
 <div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-angles-up"></i></div>
 
@@ -121,5 +140,8 @@ https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js
     <script src="script/slider.js"></script>
       <!-- scrollTop -->
       <script src="script/scrollToTop.js"></script>
+
+      <!-- accordion -->
+      <script src="script/accordion.js"></script>
   </body>
 </html>
