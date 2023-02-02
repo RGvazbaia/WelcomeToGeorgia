@@ -497,6 +497,50 @@ color: white;
   }
 }
 
+/* Cookies */
+.cookie_box{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  padding: 50px;
+  background:#fff;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  display: none;
+  z-index: 999;
+}
+
+.cookie_box.active{
+display:block;
+}
+
+.cookie_box img{
+  height: 80px;
+  width: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+.cookie_box h3{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-weight: bolder;
+}
+.cookie_box button{
+  padding: 8px 25px;
+  background: #027cb7;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.cookie_box button:focus{
+  background: #054d6f;
+}
+
 
 /* footer */
 .footer-block {
