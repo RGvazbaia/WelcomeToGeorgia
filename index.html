@@ -14,6 +14,7 @@
 ">
 <link rel="icon" type="image/x-icon" href="/images/icon.png">
   </head>
+  <body>
   <section>
     <header>
       <div class="header-wraper">
@@ -22,8 +23,8 @@
           <ul class="nav-ul" id="ul-item">
             <li><a href="">Home</a></li>
             
-            <li><a href="login.html">Sing Up</a></li>
-            <li><a href="">Sing In</a></li>
+            <li><a onclick="toggle()">Sing Up</a></li>
+            <li><a onclick="toggleSignIn()">Sing In</a></li>
           </ul>
         </nav>
         <div class="burger-bar" id="burgerBar">
@@ -102,9 +103,82 @@
           <h2 class="team-title"><span class="span1">Jessica</span></h2>
           <p class="team-content">HR Manager</p>
         </div>
-      </div>
-    
-    </section>    
+      </div>    
+    </section>  
+    <!-- Sign Up -->  
+    <div class="form" id="form">
+      <span class="xclass" onclick="toggle()"><i class="fa-solid fa-square-xmark"></i></span>
+      <p class="psignup">Sign Up</p>
+      <form action="" id="registration-form" class="reg-form">
+        <div class="validation">
+          <label for="nickname"></label>
+          <input type="text" id="nickname" name="nickname" class="inputsize" placeholder="Username"/> 
+          <p class="error-message" id="error-nickname">
+            
+          </p>
+        </div>
+        
+        <div class="validation">
+          <label for="email"></label>
+          <input type="text" id="email" name="email" class="inputsize" placeholder="Email" onkeydown=""/> 
+          <p class="error-message" id="error-email1"></p>
+          
+        </div>
+        <div class="validation">
+          <label for="password1"></label>
+          <span class="icon-eye"><i class="fa-solid fa-eye" id="toggleEye"></i></span>
+          <input type="password" id="password1" name="mypassword" class="inputsize"  placeholder="Password" /> 
+          <p class="error-message" id="error-mypassword"></p>
+        </div>
+        
+        <div class="validation">
+          <label for="password2"></label>
+          <input type="password" id="password2" name="mypassword2" class="inputsize" placeholder="Repeat Password" />
+          <p class="error-message" id="error-mypassword2">
+          </p>
+        </div>
+        <div class="validation">
+          <input type="radio" name="age" id="age1" class="age" />
+          <label for="age1">18-50</label>
+          <input type="radio" id="age2" name="age" class="age" />
+          <label for="age2">50-100</label>
+          <p class="error-message" id="error-age">
+            
+        </p>
+        </div>
+        <div class="validation">
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree">I agree  Our Terms and Conditions</label>
+          <p class="error-message" id="error-agree">
+            
+        </div>
+        <div class="validation">
+        <input class="submit" type="submit" value="SIGN UP">
+        </div>
+      </form>
+    </div>
+    <!-- Sign In -->
+    <div class="login-box">
+      <span class="xclass" onclick="toggleSignIn()"><i class="fa-solid fa-square-xmark"></i></span>
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="" required="">
+          <label>Password</label>
+        </div>
+        <a>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Sign In
+        </a>
+      </form>
+    </div>
 
     <footer class="footer-block">
       <div class="contactfooter">
@@ -125,17 +199,19 @@
         </div>
       </div>
       <p>
-        Copyright ©2022 All Rights Reserved | This Site Is Made For Academy Of
+        Copyright ©2023 All Rights Reserved | This Site Is Made For Academy Of
         Digital Industries By <span class="span1">Rati Gvazbaia</span>
       </p>
     </footer>
- 
-<!-- scroll top -->
+ <!-- registration form -->
+ <script src="script/registration.js"></script>
+ <script src="script/validation.js"></script>
+  <!-- scroll top -->
 <div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-angles-up"></i></div>
 
 
     <script src="script/Burger-Bar.js"></script>
-<!-- splide slider -->
+    <!-- splide slider -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" ></script>
     <script src="script/slider.js"></script>
       <!-- scrollTop -->
@@ -143,5 +219,6 @@
 
       <!-- accordion -->
       <script src="script/accordion.js"></script>
+      <script src="script/popup_reg.js"></script>
   </body>
 </html>

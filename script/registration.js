@@ -17,7 +17,13 @@ validationForm.addEventListener("submit", function (element) {
   }
 let emailAddress = document.getElementById("email").value;
 if (emailAddress == "") {
-  errors.email1 = "Insert Email";
+  errors.email1 = "Email is Invalid";
+}
+let emailValidation = document.getElementById("email").value;
+let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(emailValidation.match(mailformat)){
+}else{
+ errors.email1 = "Email is Invalid"
 }
 
 
