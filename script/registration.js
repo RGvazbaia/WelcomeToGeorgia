@@ -29,9 +29,12 @@ if(emailValidation.match(mailformat)){
 
   let password1 = document.getElementById("password1").value;
   let password2 = document.getElementById("password2").value;
-
+  let passwordpattern = /[A-Z]/;
   if (password1 == "") {
     errors.mypassword = "Insert Password";
+  }
+  if(!password1.match(passwordpattern)) {
+    errors.mypassword = "Please Use Minimum 1 Uppercase Letter";
   }
   if (password1 != password2) {
     errors.mypassword2 = "Passwords does not match";
