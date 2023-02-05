@@ -24,7 +24,6 @@
 .nav-ul li a:hover {
   cursor: pointer;
   color: rgb(0, 200, 226);
-  font-size: 30px;
 }
 .burger-bar {
   position: absolute;
@@ -126,6 +125,7 @@ img {
   text-align: center;
   margin: 20px;
   font-family: "Nunito";
+  color: #027cb7;
 }
 
 .sliderp {
@@ -316,6 +316,7 @@ input {
 .teambox {
   margin-bottom: 30px;
   padding: 10px;
+  cursor: pointer;
 }
 
 /* Cookies */
@@ -557,10 +558,9 @@ input {
   justify-content: space-around;
   margin-top: 100px;
   font-family: "Nunito";
-  background: no-repeat url(../images/aboutbck.jpg);
-  background-size: cover;  
+  background: no-repeat url("../images/aboutbck.jpg");
+  background-size: cover;
   position: relative;
-  
 }
 .aboutus {
   max-width: 800px;
@@ -568,11 +568,109 @@ input {
   font-size: 25px;
   color: white;
   text-align: center;
-  
 }
 .aboutus :nth-child(1) {
   font-size: 50px;
   text-align: center;
   margin-bottom: 200px;
   color: white;
+}
+
+/* api */
+.postbck {
+  background: no-repeat center url("../images/welcome.jpg");
+  background-attachment: fixed;
+}
+.posth2 {
+  padding-top: 150px;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Nunito";
+  color: white;
+}
+.posts {
+  width: 80%;
+  height: 250px;
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  font-family: "Nunito";
+  text-align: center;
+  padding-top: 50px;
+  margin: 150px auto;
+  border-radius: 25px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  display: none;
+  font-family: "Nunito";
+}
+.postform {
+  display: flex;
+  flex-direction: column;
+}
+.postform label {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 250px;
+}
+.postform input {
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+}
+.postform button {
+  width: 150px;
+  height: 50px;
+  margin: 10px auto;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.overlay,
+.overlay-add {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  display: none;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+.overlay {
+  padding-top: 250px;
+  border-radius: 15px;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  cursor: pointer;
+}
+.add-post {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  position: fixed;
+  right: 30px;
+  bottom: 90px;
+}
+.overlay.active,
+.overlay-add.active-add {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  margin: 200px auto;
 }
