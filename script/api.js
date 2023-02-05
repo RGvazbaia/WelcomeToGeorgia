@@ -48,9 +48,10 @@ function create_post(item) {
   post_id.get;
 
   let deleteButton = document.createElement("button");
-  deleteButton.innerText = "delete";
+  deleteButton.innerText = "DELETE";
   deleteButton.style.width = "90px";
   deleteButton.style.height = "50px";
+  deleteButton.style.fontSize = "20px";
   deleteButton.setAttribute("data_id", item.id);
 
   deleteButton.addEventListener("click", function (event) {
