@@ -287,9 +287,10 @@ input {
   font-family: "Nunito";
 }
 .team-title:before {
-  content: "+";
+  content: url(../images/arrow-down.png);
   font: var(--fa-solid-fa-chevron-up);
   position: absolute;
+
   top: 50%;
   right: 30px;
   transform: translateY(-50%);
@@ -310,7 +311,7 @@ input {
   display: block;
 }
 .teambox.active .team-title:before {
-  content: "-";
+  content: url(../images/arrow-up.png);
 }
 .teambox {
   margin-bottom: 30px;
@@ -556,15 +557,22 @@ input {
   justify-content: space-around;
   margin-top: 100px;
   font-family: "Nunito";
+  background: no-repeat url(../images/aboutbck.jpg);
+  background-size: cover;  
+  position: relative;
+  
 }
 .aboutus {
   max-width: 800px;
   width: 100%;
   font-size: 25px;
-  text-align: left;
+  color: white;
+  text-align: center;
+  
 }
 .aboutus :nth-child(1) {
   font-size: 50px;
   text-align: center;
   margin-bottom: 200px;
+  color: white;
 }
