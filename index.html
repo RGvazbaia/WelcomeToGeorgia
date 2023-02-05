@@ -16,15 +16,14 @@
   </head>
   <body>
   <section>
-    <header>
+    <header id="home">
       <div class="header-wraper">
         <a href="index.html"><img class="icon" src="images/icon.png" alt="icon"></a>
         <nav class="navigation" id="navBar">
           <ul class="nav-ul" id="ul-item">
-            <li><a href="">Home</a></li>
-            
-            <li><a onclick="toggle()">Sing Up</a></li>
-            <li><a onclick="toggleSignIn()">Sing In</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact Us</a></li>    
+            <li><a href="#aboutus">About Us</a></li>        
           </ul>
         </nav>
         <div class="burger-bar" id="burgerBar">
@@ -99,6 +98,16 @@
           <p class="team-content">Head Designer</p>
         </div>
         <div class="teambox">
+          <img src="images/Alan.jpg" alt="teammember" />
+          <h2 class="team-title"><span class="span1">Alan David</span></h2>
+          <p class="team-content">CEO</p>
+        </div>
+        <div class="teambox">
+          <img src="images/Alan.jpg" alt="teammember" />
+          <h2 class="team-title"><span class="span1">Alan David</span></h2>
+          <p class="team-content">CEO</p>
+        </div>
+        <div class="teambox">
           <img src="images/Jessica.jpg" alt="teammember" />
           <h2 class="team-title"><span class="span1">Jessica</span></h2>
           <p class="team-content">HR Manager</p>
@@ -156,29 +165,8 @@
         <input class="submit" type="submit" value="SIGN UP">
         </div>
       </form>
-    </div>
-    <!-- Sign In -->
-    <div class="login-box">
-      <span class="xclass" onclick="toggleSignIn()"><i class="fa-solid fa-square-xmark"></i></span>
-      <h2>Login</h2>
-      <form>
-        <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Username</label>
-        </div>
-        <div class="user-box">
-          <input type="password" name="" required="">
-          <label>Password</label>
-        </div>
-        <a>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Sign In
-        </a>
-      </form>
-    </div>
+    </div>   
+   
     <!-- cookie -->
   <section class="cookie_box" id="cookie_box">
     <img src="/images/cookies.png" alt="Cookie">
@@ -187,10 +175,33 @@
     <button id="activeBtn">Accept</button>
     <button id="closeBtn">Close</button>
   </section>
+<!-- contact us -->
+<div class="contact-about">
+ 
+<div class="contactdiv" id="contact">
+<form class='contact-us'>
+  <h2>Contact Us</h2>
+  <input type="text" name="name" class="name" placeholder="Name">
+  <input type="text" name="email" class="email" placeholder="Email">
+  <input type="text" name="subject" class="subject" placeholder="Subject">
+  <textarea name="message" class="message" placeholder="Text" rows="1" cols="10"></textarea>            
+  <button type="submit">Send a message</button>
+  <p type="submit" class="contactp">Dont have Accoun?</p>
+  
+  <button onclick="toggle()">REGISTRATION</button>
+  
+</form>
+</div>
+<div class="aboutus" id="aboutus"> 
+  <p>About us</p>
+  <p>Our travel company has been operating on the Georgian market since 2015, although each member of the team has much more experience in customer relations. From the very first day, the main goal of the company has been to organize quality and safe travel, which we still do today with great care and professionalism.</p>
+</div>
+</div>
+
+<!-- footer -->
 
     <footer class="footer-block">
       <div class="contactfooter">
-        <p class="fpstyle">Contact Us</p>
         <div class="icons">
           <a class="facebook" href="https://www.facebook.com/" target="_blank"
             ><i class="fa-brands fa-facebook"></i
@@ -213,6 +224,7 @@
     </footer>
       <!-- registration form -->
       <script src="script/registration.js"></script>
+      <script src="script/popup_reg.js"></script>
       <!-- scroll top -->
       <div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-angles-up"></i></div>
 
@@ -225,7 +237,7 @@
       <script src="script/scrollToTop.js"></script>
       <!-- accordion -->
       <script src="script/accordion.js"></script>
-      <script src="script/popup_reg.js"></script>
+      
       <script src="script/cookies.js"></script>
   </body>
 </html>

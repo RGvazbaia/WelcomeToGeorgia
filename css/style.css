@@ -8,7 +8,7 @@
   position: fixed;
   width: 100%;
   height: 80px;
-  background-color: rgba(153, 153, 153, 0.2);
+  background-color: rgba(70, 69, 69, 0.2);
 }
 .nav-ul {
   display: flex;
@@ -19,7 +19,7 @@
   color: #000;
   font-weight: bold;
 }
-.nav-ul li a:hover{
+.nav-ul li a:hover {
   cursor: pointer;
 }
 .burger-bar {
@@ -156,29 +156,28 @@ img {
   color: #000;
   font-weight: bold;
 }
- 
+
 /* Sign Up */
-.validation{
+.validation {
   margin: 0 auto;
   padding: 10px;
-  width: 90%;  
+  width: 90%;
   font-size: 16px;
   text-align: center;
 }
 
-input{
+input {
   border: 1px solid gray;
   outline: none;
   border-radius: 5px;
   padding: 20px 20px;
-
 }
 
-.inputsize{
+.inputsize {
   width: 100%;
   height: 25px;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .form {
@@ -188,18 +187,18 @@ input{
   position: fixed;
   top: 50%;
   left: 50%;
-  transform:translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 99;
- visibility: hidden;
- opacity: 0;
- transition: 0.5s;
-} 
-
-.form .validation label{
-color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
 }
 
-.icon-eye{
+.form .validation label {
+  color: white;
+}
+
+.icon-eye {
   color: #000;
   position: absolute;
   left: 340px;
@@ -208,42 +207,37 @@ color: white;
   justify-content: center;
   align-items: center;
 }
-.form.active{
+.form.active {
   visibility: visible;
   opacity: 1;
- transition: 0.5s;
+  transition: 0.5s;
 }
 
-
-.error-message{
+.error-message {
   color: #ff0000;
   font-size: 16px;
 }
 
-
-.psignup{
+.psignup {
   text-align: center;
   padding-top: 30px;
   font-size: 20px;
   color: white;
 }
 
-.xclass{
+.xclass {
   position: absolute;
   right: 10px;
-  top: 10px;  
+  top: 10px;
   font-size: 30px;
   transition: 0.5s;
   color: #fff;
-  
 }
-.xclass:hover{
+.xclass:hover {
   cursor: pointer;
   color: red;
-  
-  
 }
-.submit{
+.submit {
   background-color: #000000;
   color: #03e9f4;
   padding: 15px;
@@ -251,15 +245,13 @@ color: white;
   border: 1px solid #03e9f4;
   transition: 0.5s;
 }
-.submit:hover{
+.submit:hover {
   cursor: pointer;
   background: #03e9f4;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
 }
 /* accordion */
 .secondblock {
@@ -267,8 +259,6 @@ color: white;
   width: 80%;
   text-align: center;
   margin: 100px auto;
-  
-  
 }
 
 .secondblock h3 {
@@ -276,23 +266,21 @@ color: white;
   margin-bottom: 10px;
   font-size: 36px;
   text-align: center;
-  
 }
-.teamblock {   
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  
+.teamblock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(129px, auto);
+  grid-gap: 20px;
 }
 
-.team-title {  
+.team-title {
   margin-top: 20px;
   margin-left: 10px;
-  position: relative;  
+  position: relative;
 }
 .team-title:before {
-  content: '+';
+  content: "+";
   font: var(--fa-solid-fa-chevron-up);
   position: absolute;
   top: 50%;
@@ -306,7 +294,7 @@ color: white;
   width: 100%;
   font-size: 22px;
   transition: 0.5s;
-  
+
   margin-top: 20px;
   margin-left: 10px;
   font-size: 20px;
@@ -318,7 +306,6 @@ color: white;
   content: "-";
 }
 .teambox {
- 
   margin-bottom: 30px;
   padding: 10px;
 }
@@ -332,21 +319,19 @@ color: white;
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgb(0,0,0);
+  background: rgb(0, 0, 0);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   visibility: hidden;
   transition: 0.5s;
   opacity: 0;
 }
 
-.login-box.active{
+.login-box.active {
   visibility: visible;
   opacity: 1;
 }
-
-
 
 .login-box h2 {
   margin: 0 0 30px;
@@ -372,13 +357,13 @@ color: white;
 }
 .login-box .user-box label {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .login-box .user-box input:focus ~ label,
@@ -398,9 +383,9 @@ color: white;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
   margin-top: 40px;
-  letter-spacing: 4px
+  letter-spacing: 4px;
 }
 
 .login-box a:hover {
@@ -408,10 +393,8 @@ color: white;
   background: #03e9f4;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
 }
 
 .login-box a span {
@@ -432,7 +415,8 @@ color: white;
   0% {
     left: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     left: 100%;
   }
 }
@@ -444,14 +428,15 @@ color: white;
   height: 100%;
   background: linear-gradient(180deg, transparent, #03e9f4);
   animation: btn-anim2 1s linear infinite;
-  animation-delay: .25s
+  animation-delay: 0.25s;
 }
 
 @keyframes btn-anim2 {
   0% {
     top: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     top: 100%;
   }
 }
@@ -463,14 +448,15 @@ color: white;
   height: 2px;
   background: linear-gradient(270deg, transparent, #03e9f4);
   animation: btn-anim3 1s linear infinite;
-  animation-delay: .5s
+  animation-delay: 0.5s;
 }
 
 @keyframes btn-anim3 {
   0% {
     right: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     right: 100%;
   }
 }
@@ -482,50 +468,51 @@ color: white;
   height: 100%;
   background: linear-gradient(360deg, transparent, #03e9f4);
   animation: btn-anim4 1s linear infinite;
-  animation-delay: .75s
+  animation-delay: 0.75s;
 }
 
 @keyframes btn-anim4 {
   0% {
     bottom: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     bottom: 100%;
   }
 }
 
 /* Cookies */
-.cookie_box{
+.cookie_box {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 400px;
   padding: 50px;
-  background:#fff;
+  background: #fff;
   text-align: center;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   display: none;
   z-index: 999;
 }
 
-.cookie_box.active{
-display:block;
+.cookie_box.active {
+  display: block;
 }
 
-.cookie_box img{
+.cookie_box img {
   height: 80px;
   width: 90px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 30px;
 }
-.cookie_box h3{
+.cookie_box h3 {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
   font-weight: bolder;
 }
-.cookie_box button{
+.cookie_box button {
   padding: 8px 25px;
   background: #027cb7;
   color: #fff;
@@ -534,10 +521,9 @@ display:block;
   outline: 0;
   cursor: pointer;
 }
-.cookie_box button:focus{
+.cookie_box button:focus {
   background: #054d6f;
 }
-
 
 /* footer */
 .footer-block {
@@ -557,7 +543,7 @@ display:block;
 }
 .icons {
   display: flex;
-
+margin-top: 50px;
   justify-content: space-around;
 }
 
@@ -590,4 +576,143 @@ display:block;
 
 .fa-twitter {
   color: #00acee;
+}
+
+
+
+/* contact us about us */
+
+.contact-us {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  height: 900px;
+  align-items: center;
+  box-sizing: border-box;
+  background: no-repeat url("../images/ushba.jpg");
+  background-attachment: fixed;
+  
+}
+.contactp{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  
+  
+}
+
+.contact-us h2 {
+  width: 100%;
+  margin-bottom: 1.5em;
+  padding: 0;
+  
+  font-size: 2.5em;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2em;
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contact-us input {
+ 
+  max-width: 440px;
+  width: 100%;
+  margin: 20px auto;
+  align-items: center;
+  
+  
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  
+  font-size: 1em;
+  color: #000;
+  outline: none;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.contact-us input:-moz-placeholder {
+  color: #bbb;
+}
+.contact-us input:-ms-input-placeholder {
+  color: #bbb;
+}
+.contact-us input::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+.contact-us textarea {
+  width: 440px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 80px;
+  padding: 1em 1em 0 1.5em;
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  resize: none;
+  font-size: 1em;
+  color: #000;
+  outline: none;
+}
+.aclass{
+
+ box-sizing: border-box;
+ border: 1px solid;
+ width: 100%;
+    
+}
+.contact-us textarea:-moz-placeholder {
+  color: #bbb;
+}
+.contact-us textarea:-ms-input-placeholder {
+  color: #bbb;
+}
+.contact-us textarea::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+.contact-us button {
+  width: 100%;
+  height: 3em;
+  margin-top: 1em;
+  padding: 0;
+  background: #d9042a;
+  border: 1px solid;
+  cursor: pointer;
+  
+  font-size: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 3em;
+  text-align: center;
+}
+
+.contact-us button:hover {
+  background: #0dc916;
+}
+
+.contact-us button {
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+.contact-about{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.aboutus{
+  max-width: 800px;
+  width: 100%;
+  font-size: 25px;
+  text-align: left;
+}
+.aboutus :nth-child(1){
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 200px;
 }
