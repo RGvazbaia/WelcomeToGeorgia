@@ -287,7 +287,7 @@ input {
   font-family: "Nunito";
 }
 .team-title:before {
-  content: url(../images/arrow-down.png);
+  content: url("../images/arrow-down.png");
   font: var(--fa-solid-fa-chevron-up);
   position: absolute;
 
