@@ -568,12 +568,14 @@ input {
   font-size: 25px;
   color: white;
   text-align: center;
+
 }
 .aboutus :nth-child(1) {
   font-size: 50px;
   text-align: center;
   margin-bottom: 200px;
   color: white;
+  margin-top: 20px;
 }
 
 /* api */
