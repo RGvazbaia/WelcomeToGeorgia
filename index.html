@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>finalscript</title>
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet"></link>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
 ">
+
 <link rel="icon" type="image/x-icon" href="/images/icon.png">
   </head>
   <body>
@@ -21,9 +23,9 @@
         <a href="index.html"><img class="icon" src="images/icon.png" alt="icon"></a>
         <nav class="navigation" id="navBar">
           <ul class="nav-ul" id="ul-item">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#contact">Contact Us</a></li>    
-            <li><a href="#aboutus">About Us</a></li>        
+            <li><a href="#home" class="closehome">Home</a></li>
+            <li><a href="#contact" class="closecontact">Contact Us</a></li>    
+            <li><a href="#aboutus" class="closeabout">About Us</a></li>        
           </ul>
         </nav>
         <div class="burger-bar" id="burgerBar">
@@ -114,70 +116,9 @@
         </div>
       </div>    
     </section>  
-    <!-- Sign Up -->  
-    <div class="form" id="form">
-      <span class="xclass" onclick="toggle()"><i class="fa-solid fa-square-xmark"></i></span>
-      <p class="psignup">Sign Up</p>
-      <form action="" id="registration-form" class="reg-form">
-        <div class="validation">
-          <label for="nickname"></label>
-          <input type="text" id="nickname" name="nickname" class="inputsize" placeholder="Username"/> 
-          <p class="error-message" id="error-nickname">
-            
-          </p>
-        </div>
-        
-        <div class="validation">
-          <label for="email"></label>
-          <input type="text" id="email" name="email" class="inputsize" placeholder="Email" onkeydown=""/> 
-          <p class="error-message" id="error-email1"></p>
-          
-        </div>
-        <div class="validation">
-          <label for="password1"></label>
-          <span class="icon-eye"><i class="fa-solid fa-eye" id="toggleEye"></i></span>
-          <input type="password" id="password1" name="mypassword" class="inputsize"  placeholder="Password" /> 
-          <p class="error-message" id="error-mypassword"></p>
-        </div>
-        
-        <div class="validation">
-          <label for="password2"></label>
-          <input type="password" id="password2" name="mypassword2" class="inputsize" placeholder="Repeat Password" />
-          <p class="error-message" id="error-mypassword2">
-          </p>
-        </div>
-        <div class="validation">
-          <input type="radio" name="age" id="age1" class="age" />
-          <label for="age1">18-50</label>
-          <input type="radio" id="age2" name="age" class="age" />
-          <label for="age2">50-100</label>
-          <p class="error-message" id="error-age">
-            
-        </p>
-        </div>
-        <div class="validation">
-          <input type="checkbox" name="agree" id="agree" />
-          <label for="agree">I agree  Our Terms and Conditions</label>
-          <p class="error-message" id="error-agree">
-            
-        </div>
-        <div class="validation">
-        <input class="submit" type="submit" value="SIGN UP">
-        </div>
-      </form>
-    </div>   
    
-    <!-- cookie -->
-  <section class="cookie_box" id="cookie_box">
-    <img src="/images/cookies.png" alt="Cookie">
-    <h3>Cookie Policy</h3>
-    <p>This site can store cookies on your browser and disclose information in accrdance with our cookie <a href="#">Learn More</a></p>
-    <button id="activeBtn">Accept</button>
-    <button id="closeBtn">Close</button>
-  </section>
 <!-- contact us -->
-<div class="contact-about">
- 
+<div class="contact-about"> 
 <div class="contactdiv" id="contact">
 <form class='contact-us'>
   <h2>Contact Us</h2>
@@ -186,10 +127,9 @@
   <input type="text" name="subject" class="subject" placeholder="Subject">
   <textarea name="message" class="message" placeholder="Text" rows="1" cols="10"></textarea>            
   <button type="submit">Send a message</button>
-  <p type="submit" class="contactp">Dont have Accoun?</p>
+  <p type="submit" class="contactp">Dont have Accoun?</p>  
   
-  <button onclick="toggle()">REGISTRATION</button>
-  
+  <p class="registrationp" onclick="toggle()">REGISTRATION</p>  
 </form>
 </div>
 <div class="aboutus" id="aboutus"> 
@@ -197,7 +137,68 @@
   <p>Our travel company has been operating on the Georgian market since 2015, although each member of the team has much more experience in customer relations. From the very first day, the main goal of the company has been to organize quality and safe travel, which we still do today with great care and professionalism.</p>
 </div>
 </div>
+ <!-- Sign Up -->  
+ <div class="form" id="form">
+  <span class="xclass" onclick="toggle()"><i class="fa-solid fa-square-xmark"></i></span>
+  <p class="psignup">Sign Up</p>
+  <form action="" id="registration-form" class="reg-form">
+    <div class="validation">
+      <label for="nickname"></label>
+      <input type="text" id="nickname" name="nickname" class="inputsize" placeholder="Username"/> 
+      <p class="error-message" id="error-nickname">
+        
+      </p>
+    </div>
+    
+    <div class="validation">
+      <label for="email"></label>
+      <input type="text" id="email" name="email" class="inputsize" placeholder="Email" onkeydown=""/> 
+      <p class="error-message" id="error-email1"></p>
+      
+    </div>
+    <div class="validation">
+      <label for="password1"></label>
+      <span class="icon-eye"><i class="fa-solid fa-eye" id="toggleEye"></i></span>
+      <input type="password" id="password1" name="mypassword" class="inputsize"  placeholder="Password" /> 
+      <p class="error-message" id="error-mypassword"></p>
+    </div>
+    
+    <div class="validation">
+      <label for="password2"></label>
+      <input type="password" id="password2" name="mypassword2" class="inputsize" placeholder="Repeat Password" />
+      <p class="error-message" id="error-mypassword2">
+      </p>
+    </div>
+    <div class="validation">
+      <input type="radio" name="age" id="age1" class="age" />
+      <label for="age1">18-50</label>
+      <input type="radio" id="age2" name="age" class="age" />
+      <label for="age2">50-100</label>
+      <p class="error-message" id="error-age">
+        
+    </p>
+    </div>
+    <div class="validation">
+      <input type="checkbox" name="agree" id="agree" />
+      <label for="agree">I agree  Our Terms and Conditions</label>
+      <p class="error-message" id="error-agree">
+        
+    </div>
+    <div class="validation">
+    <input class="submit" type="submit" value="SIGN UP">
+    </div>
+  </form>
+</div>   
 
+
+<!-- cookie -->
+<section class="cookie_box" id="cookie_box">
+  <img src="/images/cookies.png" alt="Cookie">
+  <h3>Cookie Policy</h3>
+  <p>This site can store cookies on your browser and disclose information in accrdance with our cookie <a href="#">Learn More</a></p>
+  <button id="activeBtn">Accept</button>
+  <button id="closeBtn">Close</button>
+</section>
 <!-- footer -->
 
     <footer class="footer-block">
