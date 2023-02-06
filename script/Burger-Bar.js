@@ -12,19 +12,19 @@ burgerBar.addEventListener("click", function () {
 });
 
 closeHome.addEventListener("click", function () {
-  navigation.classList.toggle("activeNav");
-  burgerBar.classList.toggle("activeBugerBar");
-  navUl.classList.toggle("toggleNavigation");
+  navigation.classList.remove("activeNav");
+  burgerBar.classList.remove("activeBugerBar");
+  navUl.classList.remove("toggleNavigation");
 });
 
 closeContact.addEventListener("click", function () {
-  navigation.classList.toggle("activeNav");
-  burgerBar.classList.toggle("activeBugerBar");
-  navUl.classList.toggle("toggleNavigation");
+  navigation.classList.remove("activeNav");
+  burgerBar.classList.remove("activeBugerBar");
+  navUl.classList.remove("toggleNavigation");
 });
 
 closeAbout.addEventListener("click", function () {
-  navigation.classList.toggle("activeNav");
-  burgerBar.classList.toggle("activeBugerBar");
-  navUl.classList.toggle("toggleNavigation");
+  navigation.classList.remove("activeNav");
+  burgerBar.classList.remove("activeBugerBar");
+  navUl.classList.remove("toggleNavigation");
 });

@@ -8,7 +8,7 @@
   position: fixed;
   width: 100%;
   height: 80px;
-  background-color: rgba(70, 69, 69, 0.2);
+  background-color: rgba(0, 0, 0, 0.582);
 }
 .nav-ul {
   display: flex;
@@ -340,7 +340,7 @@ input {
 }
 
 .cookie_box img {
-  height: 80px;
+  height: 90px;
   width: 90px;
   display: inline-block;
   vertical-align: middle;
@@ -591,7 +591,7 @@ input {
   color: white;
 }
 .posts {
-  width: 80%;
+  width: 70%;
   height: 250px;
   background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
   font-family: "Nunito";
