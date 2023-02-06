@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-" rel="stylesheet"></link>
+" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
 ">
 
@@ -34,7 +34,8 @@
             <li><a href="#home" class="closehome">Home</a></li>
             <li><a href="#contact" class="closecontact">Contact Us</a></li>    
             <li><a href="#aboutus" class="closeabout">About Us</a></li>  
-            <li><a href="comments.html">Posts</a></li>      
+            <li><a href="comments.html">Posts</a></li> 
+            <li><a href="guides.html">Guides</a></li>     
           </ul>
         </nav>
         <div class="burger-bar" id="burgerBar">
@@ -44,54 +45,54 @@
         </div>
       </div>
     </header>
-    <section class="welcomebck">
+    <div class="welcomebck">
       <div class="welcome">
         Welcome To Georgia
       </div>        
-    </section>
+    </div>
     <p class="sliderp">Explore Top Destination</p>
     <div class="splide">
       <div class="splide__track">
         <div class="splide__list">
           <div class="splide__slide">
             <div class="img__box">
-              <img src="images/samegrelo.jpg">
+              <img src="images/samegrelo.jpg" alt="buneba">
               <a href="https://georgiantravelguide.com/ka/martvilis-kanioni"><p>Martville Canyon</p></a>
             </div>
           </div>
           <div class="splide__slide">
             <div class="img__box">
-              <img src="images/svaneti.jpg">
+              <img src="images/svaneti.jpg" alt="buneba">
               <a href="https://georgiantravelguide.com/ka/ushguli"><p>Ushba</p></a>
             </div>
           </div>
           <div class="splide__slide">
             <div class="img__box">
-              <img src="images/gudauri.jpg">
-              <a href="https://georgiantravelguide.com/ka/satkhilamuro-kurorti-gudauri"><p>Gudauri</p></a>
+              <img src="images/gudauri.jpg" alt="buneba">
+              <a href="https://georgiantravelguide.com/ka/satkhilamuro-kurorti-gudauri" ><p>Gudauri</p></a>
             </div>
           </div>
           <div class="splide__slide">
             <div class="img__box">
-              <img src="images/borjomisparki.jpg">
+              <img src="images/borjomisparki.jpg"  alt="buneba">
               <a href="https://georgiantravelguide.com/ka/borjom-kharagaulis-erovnuli-parki"><p>Borjom-Kharagauli National Park</p></a>
             </div>
           </div>
           <div class="splide__slide">
             <div class="img__box">
-              <img src="images/promete.jpg">
+              <img src="images/promete.jpg" alt="buneba">
               <a href="https://georgiantravelguide.com/ka/prometes-mghvime"><p>Prometheus Cave</p></a>
             </div>
           </div>
           <div class="splide__slide">
             <div class="img__box">
-              <img src="images/oldtbilisi.jpg">
+              <img src="images/oldtbilisi.jpg" alt="buneba">
               <a href="https://georgiantravelguide.com/ka/dzveli-tbilisi"><p>Old Tbilisi</p></a>
             </div>
           </div>
           <div class="splide__slide">
             <div class="img__box">
-              <img src="images/kakheti.jpg">
+              <img src="images/kakheti.jpg" alt="buneba">
               <a href="https://georgiantravelguide.com/ka/sighnaghi"><p>Sighnagi</p></a>
             </div>
           </div>
@@ -101,7 +102,7 @@
   </section>
     <section>
       <div class="secondblock">        
-        <h3>Our Guides</h3>        
+        <h3>Our Top Guides</h3>        
       </div>
       
       <div class="teamblock">
@@ -148,13 +149,13 @@
   <input type="text" name="subject" class="subject" placeholder="Subject">
   <textarea name="message" class="message" placeholder="Text" rows="1" cols="10"></textarea>            
   <button type="submit">Send a message</button>
-  <p type="submit" class="contactp">Dont have Accoun?</p>  
+  <p class="contactp">Dont have Account?</p>  
   
   <p class="registrationp" onclick="toggle()">REGISTRATION</p>  
 </form>
 </div>
 <div class="aboutus" id="aboutus"> 
-  <p>About us</p>
+  <h3>About Us</h3>
   <p>Our travel company has been operating on the Georgian market since 2015, although each member of the team has much more experience in customer relations. From the very first day, the main goal of the company has been to organize quality and safe travel, which we still do today with great care and professionalism.</p>
 </div>
 </div>
@@ -162,7 +163,7 @@
  <div class="form" id="form">
   <span class="xclass" onclick="toggle()"><i class="fa-solid fa-square-xmark"></i></span>
   <p class="psignup">Sign Up</p>
-  <form action="" id="registration-form" class="reg-form">
+  <form action="#" id="registration-form" class="reg-form">
     <div class="validation">
       <label for="nickname"></label>
       <input type="text" id="nickname" name="nickname" class="inputsize" placeholder="Username"/> 
@@ -216,7 +217,7 @@
 <section class="cookie_box" id="cookie_box">
   <img src="images/cookies.png" alt="Cookie">
   <h3>Cookie Policy</h3>
-  <p>This site can store cookies on your browser and disclose information in accrdance with our cookie <a href="https://www.javatpoint.com/javascript-cookies" target="_blank"">Learn More</a></p>
+  <p>This site can store cookies on your browser and disclose information in accrdance with our cookie <a href="https://www.javatpoint.com/javascript-cookies" target="_blank">Learn More</a></p>
   <button id="activeBtn">Accept</button>
   <button id="closeBtn">Close</button>
 </section>
@@ -262,6 +263,6 @@
       
       <script src="script/cookies.js"></script>
       <!-- api -->
-      <script src="script/api.js"></script>
+      <script src="script/api.js"></script>      
   </body>
 </html>

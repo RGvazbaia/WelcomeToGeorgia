@@ -1,4 +1,22 @@
+@media (max-width: 1520px) {
+  .guides{
+    height: 140vh;
+  }
+}
 @media (max-width: 1024px) {
+  .burger-bar {
+    display: block;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .nav-ul li a {
+    font-size: 30px;
+  }
+  .nav-ul :nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .contact-about {
     flex-direction: column;
     align-items: center;
@@ -7,14 +25,16 @@
     text-align: center;
     margin-top: 100px;
   }
-  .aboutus :nth-child(1) {    
+  .aboutus :nth-child(1) {
     margin: 0;
     margin-bottom: 50px;
-    
   }
-  
+
   .teamblock {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .guides{
+    height: 2400px;
   }
 }
 @media (max-width: 768px) {
@@ -39,10 +59,15 @@
     margin: 0 auto;
   }
   .aboutus :nth-child(1) {
-    
     margin: 0;
     margin-bottom: 50px;
-    
+  }
+  
+  .guides{
+    height: 2400px;
+  }
+  #search-input{
+    width: 50%;
   }
 }
 @media (max-width: 480px) {
@@ -61,21 +86,19 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .aboutus :nth-child(1) {
-    
     margin: 0;
     margin-bottom: 50px;
-    
   }
 }
 
-@media (max-width: 350px){
+@media (max-width: 350px) {
   .contact-us {
     width: 300px;
     margin: 0 auto;
   }
 }
 
-@media (max-width: 326px){
+@media (max-width: 326px) {
   .contact-us {
     width: 280px;
     margin: 0 auto;
@@ -87,7 +110,7 @@
     width: 280px;
   }
 }
-@media (max-width: 320px){
+@media (max-width: 320px) {
   .contact-us {
     width: 270px;
     margin: 0 auto;
@@ -99,9 +122,7 @@
     width: 250px;
   }
   .aboutus :nth-child(1) {
-    
     margin: 0;
     margin-bottom: 50px;
-    
   }
 }

@@ -32,8 +32,7 @@
         <nav class="navigation" id="navBar">
           <ul class="nav-ul" id="ul-item">
             <li><a href="index.html" class="closehome">Home</a></li>             
-            <li><a href="comments.html">Posts</a></li> 
-            <li><a href="guides.html">Guides</a></li>     
+            <li><a href="comments.html">Posts</a></li>     
           </ul>
         </nav>
         <div class="burger-bar" id="burgerBar">
@@ -44,25 +43,16 @@
       </div>
     </header>
   </section>
-
-  <section class="postbck">     
-      <h2 class="posth2">See Our Post</h2>
-      <div class="mainBox" id="mainBox">
-        <div class="overlay" id="overlay">
-          <div class="content" id="content">
-          </div>
-          <div class="closeIcon" id="closeIcon"> <i class="fa-sharp fa-solid fa-circle-xmark"></i> </div>
-          </div>        
-        <div id="add-post" class="add-post"><i class="fa-solid fa-circle-plus"></i></div>
-        <div id="overlay-add" class="overlay-add">
-          <form action="#" class="postform" id="form-add">          
-            <label for="title">Leave us a comment</label>
-            <input type="text" name="titlefield" id="title">
-            <button id="button-add"><i class="fa-solid fa-paper-plane"></i></button>
-          </form>
-        </div>
-      </div>
-  </section>  
+  
+  <section class="guides">
+    <h2>All Guides</h2>
+    <form>
+        <input type="search" id="search-input" placeholder="Search">
+        <button type="submit" id="search-button">Search</button>
+      </form>
+      
+        <div id="results"></div>
+</section>
   <footer class="footer-block">
     <div class="contactfooter">
       <div class="icons">
@@ -104,6 +94,7 @@
     <script src="script/cookies.js"></script>
 
   <script src="script/api.js"></script>
+  <script src="script/searchfilter.js"></script>
 </body>
 
 </html>

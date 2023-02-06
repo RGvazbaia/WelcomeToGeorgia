@@ -15,17 +15,16 @@ validationForm.addEventListener("submit", function (element) {
   if (usernameBox == "") {
     errors.nickname = "Insert Nickname";
   }
-let emailAddress = document.getElementById("email").value;
-if (emailAddress == "") {
-  errors.email1 = "Email is Invalid";
-}
-let emailValidation = document.getElementById("email").value;
-let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(emailValidation.match(mailformat)){
-}else{
- errors.email1 = "Email is Invalid"
-}
-
+  let emailAddress = document.getElementById("email").value;
+  if (emailAddress == "") {
+    errors.email1 = "Email is Invalid";
+  }
+  let emailValidation = document.getElementById("email").value;
+  let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (emailValidation.match(mailformat)) {
+  } else {
+    errors.email1 = "Email is Invalid";
+  }
 
   let password1 = document.getElementById("password1").value;
   let password2 = document.getElementById("password2").value;
@@ -33,7 +32,7 @@ if(emailValidation.match(mailformat)){
   if (password1 == "") {
     errors.mypassword = "Insert Password";
   }
-  if(!password1.match(passwordpattern)) {
+  if (!password1.match(passwordpattern)) {
     errors.mypassword = "Please Use Minimum 1 Uppercase Letter";
   }
   if (password1 != password2) {
