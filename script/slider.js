@@ -1,3 +1,4 @@
+"use strict";
 let splide = new Splide(".splide", {
   type: "loop",
   perPage: 4,

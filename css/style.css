@@ -675,7 +675,7 @@ input {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  height: 150vh;  
 }
 .guides h2{
   text-align: center;

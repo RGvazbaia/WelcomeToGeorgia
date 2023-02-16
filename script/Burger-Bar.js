@@ -1,3 +1,4 @@
+"use strict";
 let navigation = document.getElementById("navBar");
 let navUl = document.getElementById("ul-item");
 let burgerBar = document.getElementById("burgerBar");

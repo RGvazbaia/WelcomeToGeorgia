@@ -1,3 +1,4 @@
+"use strict";
 let cookie_box = document.getElementById("cookie_box");
 let activeBtn = document.getElementById("activeBtn");
 let closeBtn = document.getElementById("closeBtn");

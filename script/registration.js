@@ -1,3 +1,4 @@
+"use strict";
 let validationForm = document.getElementById("registration-form");
 
 validationForm.addEventListener("submit", function (element) {
