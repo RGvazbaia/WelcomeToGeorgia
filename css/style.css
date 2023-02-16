@@ -673,9 +673,9 @@ input {
   padding-top: 150px;
   background: no-repeat center center url("../images/toba.jpg");
   background-attachment: fixed;
-  background-size: cover;
-  position: relative;
-  height: 150vh;  
+  background-size: cover;  
+  height: 100vh;
+    
 }
 .guides h2{
   text-align: center;
@@ -688,8 +688,9 @@ input {
 
 #results {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   justify-content: center;
+  
 }
 #results div {
   width: 300px;
@@ -697,6 +698,7 @@ input {
   margin: 100px;
 }
 #results img {
+  
   width: 250px;
   height: 250px;
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
