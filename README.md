@@ -6,7 +6,7 @@ Most javascript side is created by me and no libraries are used except the slide
 author) + fb meta tags)
 3. Hover animations (transitions, hover effects) are used.
 4. Added webkits (https://autoprefixer.github.io/ an vs code).
-5. Screen sizes are considered.  1024px, 768px, 480px, 320px.
+5. Screen sizes are considered. Responsive to 1024px, 768px, 480px, 320px.
 6. Checked with HTML validator.
 7. Fonts used.
 8. Icons are used.
@@ -19,5 +19,4 @@ author) + fb meta tags)
 15. Used scroll to top fnction.
 16. used search filter.
 16. used slider.
-
 
