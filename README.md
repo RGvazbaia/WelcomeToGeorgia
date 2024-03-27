@@ -16,7 +16,7 @@ author) + fb meta tags)
 12. Used API.
 13. Used Cookies.
 14. Used popup.
-15. Used scroll to top fnction.
+15. Used scroll to top function.
 16. used search filter.
 16. used slider.
 
